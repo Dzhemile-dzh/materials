@@ -20,7 +20,7 @@ class Material {
     }
 
     public static function groupMaterialsByName($conn) {
-        $stmt = $conn->prepare('SELECT name, SUM(quantity) as total_quantity 
+        $stmt = $conn->prepare('SELECT name, ROUND(SUM(quantity),1) as total_quantity 
                                 FROM materials 
                                 GROUP BY name
                                 ORDER BY total_quantity');

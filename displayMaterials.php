@@ -9,7 +9,7 @@
 <body>
   <div class="container">
     <h2>Grouped Materials</h2>
-    <button class="btn btn-warning" onclick=""javascript:history.go(-1)">Back</a></button>
+    <button class="btn btn-warning" onclick="javascript:history.go(-1)">Back</a></button>
     <table class="table">
       <thead>
         <tr>
