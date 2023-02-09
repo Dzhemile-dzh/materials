@@ -1,3 +1,8 @@
+<?php 
+    include './db/connection.php';
+    include './model/Material.php';
+?>
+
 <html>
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -31,9 +36,30 @@
                 <input type="file" class="form-control-file" id="document" name="document">
             </div>
             <input type="submit" class="btn btn-primary" value="Submit">
-            <input type="button" class="btn btn-success" value="Display Materials" onclick="window.location.href='displayMaterials.php'">
-
         </form>
+
+        <h2>Grouped Materials</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Total Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                $groupedMaterials = Material::groupMaterialsByName($conn);
+                foreach ($groupedMaterials as $material) {
+                ?>
+                <tr>
+                    <td><?= $material['name'] ?></td>
+                    <td><?= $material['total_quantity'] ?></td>
+                </tr>
+                <?php
+                }
+                ?>
+            </tbody>
+        </table>
     </div>
   </body>
 </html>

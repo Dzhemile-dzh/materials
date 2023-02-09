@@ -13,6 +13,7 @@ form.addEventListener('submit', (e) => {
                   const material = response.material;
                   alert("You added material successfully");
                   form.reset();
+                  location.reload();
               } else {
                   console.error(response.message);
               }
