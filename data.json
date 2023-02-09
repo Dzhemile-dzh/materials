@@ -1,0 +1,35 @@
+[
+    {
+        "name": "iron",
+        "description": "Iron is a lustrous, ductile, malleable, silver-gray metal (group VIII of the periodic table). It is known to exist in four distinct crystalline forms. Iron rusts in damp air, but not in dry air. It dissolves readily in dilute acids.",
+        "quantity": "4",
+        "unit": "ug\/dL",
+        "price": "120.2",
+        "document": "documents\/iron.txt"
+    },
+    {
+        "name": "steel",
+        "description": "Steel is an alloy of iron and carbon containing less than 2% carbon and 1% manganese and small amounts of silicon, phosphorus, sulphur and oxygen. Steel is the world's most important engineering and construction material.",
+        "quantity": "10",
+        "unit": "mm",
+        "price": "90.80",
+        "document": "documents\/steel.txt"
+    },
+    {
+        "name": "wood",
+        "description": "Wood is an organic material with fibrous, heterogeneous and anisotropic texture produced from the tree, which is a living organism. Wood is one of the oldest building material. Humankind uses wood for sheltering and protection purposes since the ancient times.",
+        "quantity": "21",
+        "unit": "mmHg",
+        "price": "40.90",
+        "document": "documents\/wood.txt"
+    },
+    {
+        "name": "aluminum",
+        "description": "Aluminium is a silvery-white, lightweight metal. It is soft and malleable. Uses. Aluminium is used in a huge variety of products including cans, foils, kitchen utensils, window frames, beer kegs and aeroplane parts.",
+        "quantity": "21",
+        "unit": "kg",
+        "price": "60.90",
+        "document": "documents\/aluminium.txt"
+    }
+
+]
