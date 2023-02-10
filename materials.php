@@ -53,7 +53,9 @@
                 ?>
                 <tr>
                     <td><?= $material['name'] ?></td>
-                    <td><?= $material['total_quantity'] ?></td>
+                    <td><?= $material['total_quantity'] ?>
+                        <i><?= $material['unit'] ?></i>
+                    </td>
                 </tr>
                 <?php
                 }

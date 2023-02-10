@@ -20,10 +20,10 @@ class Material {
     }
 
     public static function groupMaterialsByName($conn) {
-        $stmt = $conn->prepare('SELECT name, ROUND(SUM(quantity),1) as total_quantity 
+        $stmt = $conn->prepare('SELECT name, ROUND(SUM(quantity),1) as total_quantity, unit 
                                 FROM materials 
                                 GROUP BY name
-                                ORDER BY total_quantity');
+                                ORDER BY total_quantity DESC');
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
